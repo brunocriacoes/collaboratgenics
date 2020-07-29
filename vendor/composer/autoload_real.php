@@ -62,7 +62,6 @@ class ComposerAutoloaderInit4d7be38c62d71c7b93a82a7774ba8d5e
 
 function composerRequire4d7be38c62d71c7b93a82a7774ba8d5e($fileIdentifier, $file)
 {
-    var_dump( $file );
     if (empty($GLOBALS['__composer_autoload_files'][$fileIdentifier])) {
         require $file;
 
