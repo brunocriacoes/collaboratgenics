@@ -16,7 +16,7 @@ namespace Zend\Diactoros;
  * @throws Exception\InvalidArgumentException if one or more of the tmp_name,
  *     size, or error keys are missing from $spec.
  */
-function createUploadedFile(array $spec) 
+function createUploadedFile(array $spec) : UploadedFile
 {
     if (! isset($spec['tmp_name'])
         || ! isset($spec['size'])
